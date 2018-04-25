@@ -1,0 +1,15 @@
+.container {
+  width: auto;
+}
+
+.row {
+  width: auto;
+}
+
+.box {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 1px;
+  border: 2px solid black;
+} 

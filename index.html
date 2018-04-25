@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+
+  </head>
+  <body>
+
+  </body>
+
+  <script type="text/javascript">
+
+    function addRows(length) {
+      for (var i=0;i<length;i++) {   
+        let container = document.createElement('div');
+        container.classList.add('row');
+        document.body.appendChild(container);
+      }
+    }
+
+    function addBox(row) {
+      let box = document.createElement('div');
+      box.classList.add('box');
+      row.appendChild(box);
+    }
+
+    function createGrid(size) {
+      addRows(size);
+
+      const row = document.querySelectorAll(".row");
+
+      row.forEach(function(row) {
+        for (var i=0;i<size;i++) {
+          addBox(row);
+        }
+      });
+    }
+
+    createGrid(30);
+
+  </script>
+</html>
+
